@@ -6,11 +6,12 @@ import { errorMiddleware } from './middlewares/error';
 import routes from './routes';
 
 const corsOptions: CorsOptions = {
-  origin: ['http://localhost:5173', 'http://192.168.0.33:3000'],
+  origin: ['http://localhost:5173', 'http://192.168.0.33:3000', 'https://full-stack-test-nine.vercel.app'],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   exposedHeaders: ['Content-Type', 'Authorization'],
 };
+
 
 
 
