@@ -7,8 +7,9 @@
 		"dev": "nodemon --exec ts-node ./src/index.ts",
 		"migration:generate": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:generate ./src/migrations/default",
 		"migration:run": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:run",
-		"build": "rm -rf ./dist && tsc",
-		"start": "nodemon --exec ts-node ./src/index.ts"
+			"start": "node index.js",
+			"build": "tsc -p ."
+
 	},
 	"devDependencies": {
 		"@types/bcrypt": "^5.0.0",
